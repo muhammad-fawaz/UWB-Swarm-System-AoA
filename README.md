@@ -1,0 +1,116 @@
+<<<<<<< HEAD
+# UWB-AOA-with-Display-STM32F103C8T6
+
+UWB AOA with Display STM32F103C8T6
+
+
+# Makerfabs
+
+[Makerfabs Homepage](https://www.makerfabs.com/)
+
+[Makerfabs Wiki](https://wiki.makerfabs.com/)
+
+
+# Feature:
+
+• Controller: STM32F103C8T6, max 72MHz frequency, 1.25 DMIPS/MHz(Dhrystone 2.1), 64KB Flash memory, 20KB SRAM  
+
+• DW3000 Module(Anchor):UWB-X3-AOA  
+
+• DW3000 Module(Tag):UWB-X3-MAX  
+
+• OLED: 1.3" SSD1306, 128X64, I2C  
+
+• "Zero" Dropout: On board ideal diode circuit  
+
+• Dual-USB Type C:USB-Native/USB-TTL  
+
+• USB-to-UART: CH340K  
+
+• Charger: TP4056  
+
+• Button:RST/BTN  
+
+• Expander: 2X12 2.54mm header  
+
+• Open Source: hardware/firmware/software  
+
+• Coverage radius: 30m@6.8M 
+
+• angle:+/-60° 
+
+• angle error:±5° 
+
+• Ranging error:< 10cm 
+
+• Positioning error： <10cm 
+
+• Frequency: CH5 (6.5 GHz)/CH9 (8 GHz)  
+
+• Speed rate: 850 Kbps/6.8Mbps  
+
+• Communication interface: SPI  
+
+• Power Supply: USB 5.0V or 3.7V lithium battery  
+
+
+# Usage:
+
+1. Insert to USB-NATIVE port of AOA anchor.  
+2. Insert to USB-TTL port of AOA tag(Or Powered by Li-battery).  
+3. Open the AOA System Application.  
+4. Select Tag ID and joined.  
+5. Result Show:  
+![](Images/AOA_System01.jpg)
+
+
+# Firmware
+
+| Type | Default Firmware | 
+|---|---|
+| Anchor | Project\_Anchor\_v1.0.hex |
+| Tag | Project\_Tag\_v1.0.hex |
+
+# How to Program?
+
+|ST-LINK V2 |AOA Anchor/Tag Board|  
+| ---- | ---- | 
+|SWCLK|SWCK|  
+|SWDIO|SWIO|  
+|GND|GND|  
+|3.3V|+3.3V|  
+
+# How to turn on the PA in tag?
+1. Modify the value of PMSC_TXFINESEQ_DISABLE to 0x0d20010 in deca_vals.h header file: 
+
+#define PMSC_TXFINESEQ_DISABLE  0x0d20010 
+
+![](Images/TurnOn_TagPA01.png)  
+
+2. Add a definition in config_options.h header file: 
+
+#define HW_PA 
+
+![](Images/TurnOn_TagPA02.png)  
+
+# Why there is No com port in AOA system software?  
+
+1. Install the STM32_VCP_V1.4.0_Setup.exe in Driver folder.  
+2. Update the driver from the Device Manager.  
+3. Insert the USB Type C cable to USB Native port of AOA Anchor before you open the AOA system software. 
+
+# Where to purchase? 
+[AOA KIT](https://www.makerfabs.com/mauwb-stm32-aoa-development-kit.html) 
+
+
+# FAQ
+
+You can list your question here or contact techsupport@makerfabs.com for technology support. Detailed descriptions of your question will be helped to solve your question.
+
+• Q:The AOA kit has multiple tag bindings, resulting in the inability to obtain distance and angle information.
+
+• A:One AOA device only supports one anchor point paired with one tag to work simultaneously. Excess tags will cause the data not to be displayed. Please unbind the phantom false tags in the interface, and the kit can be used normally.
+
+=======
+# UWB-Swarm-System-AoA
+>>>>>>> ef435668430f38de89994669a2c68ad16ad99803

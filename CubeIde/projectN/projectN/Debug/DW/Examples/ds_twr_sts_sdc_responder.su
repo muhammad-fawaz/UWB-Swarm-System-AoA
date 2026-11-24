@@ -1,0 +1,8 @@
+../DW/Examples/ds_twr_sts_sdc_responder.c:125:6:display_to_lcd_twr	56	static
+../DW/Examples/ds_twr_sts_sdc_responder.c:172:6:pdoa2XY	48	static
+../DW/Examples/ds_twr_sts_sdc_responder.c:228:6:r95Sort	56	static
+../DW/Examples/ds_twr_sts_sdc_responder.c:255:6:motionFilter.part.0	768	static
+../DW/Examples/ds_twr_sts_sdc_responder.c:255:6:motionFilter	0	static
+../DW/Examples/ds_twr_sts_sdc_responder.c:303:6:discovery_process	16	static
+../DW/Examples/ds_twr_sts_sdc_responder.c:348:6:ranging_process	144	static
+../DW/Examples/ds_twr_sts_sdc_responder.c:491:5:ds_twr_sts_sdc_responder	24	static
